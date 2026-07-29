@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JIYA ENTERPRISES | Industrial Manufacturing Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=IBM+Plex+Sans:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e8e8e8",
+                        "surface-tint": "#bb171c",
+                        "surface": "#f9f9f9",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "secondary-fixed": "#d7e2ff",
+                        "on-surface-variant": "#5b403d",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#747474",
+                        "on-tertiary-container": "#fefcfc",
+                        "on-primary-fixed-variant": "#93000d",
+                        "primary": "#b7131a",
+                        "inverse-primary": "#ffb4ac",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-container": "#3b5481",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c7c6c6",
+                        "outline": "#906f6c",
+                        "inverse-surface": "#2f3131",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary": "#5c5c5c",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-primary-fixed": "#410002",
+                        "on-secondary-fixed": "#001b3f",
+                        "background": "#f9f9f9",
+                        "on-primary-container": "#fffbff",
+                        "surface-container-low": "#f3f3f3",
+                        "primary-container": "#db322f",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#adc7fb",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "secondary-container": "#b0cafe",
+                        "primary-fixed": "#ffdad6",
+                        "on-secondary-fixed-variant": "#2d4773",
+                        "on-background": "#1a1c1c",
+                        "on-surface": "#1a1c1c",
+                        "secondary": "#455e8c",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#e3e2e2",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "outline-variant": "#e4beb9",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "1.5rem",
+                        "margin-mobile": "1rem",
+                        "container-max": "1280px",
+                        "margin-desktop": "2.5rem"
+                    },
+                    "fontFamily": {
+                        "label-md": ["JetBrains Mono"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["IBM Plex Sans"],
+                        "headline-lg": ["IBM Plex Sans"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-md": ["IBM Plex Sans"],
+                        "headline-xl": ["IBM Plex Sans"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .industrial-grid {
+            background-image: radial-gradient(#d1d1d1 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }        .marquee {
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 1.25rem;
+            background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: marquee-scroll 28s linear infinite;
+        }
+        .marquee-item {
+            flex: 0 0 auto;
+            width: 220px;
+            margin-right: 1rem;
+            overflow: hidden;
+            border-radius: 1rem;
+            border: 1px solid rgba(0,0,0,0.06);
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
+        .marquee-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        /* Products grid and card styles */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            align-items: stretch;
+        }
+        .product-card {
+            box-sizing: border-box;
+            height: 500px;
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 220ms ease, box-shadow 220ms ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 36px rgba(0,0,0,0.12);
+        }
+        .product-card .img-wrap {
+            height: 260px;
+            width: 100%;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        .product-card .img-wrap img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .product-card .card-body {
+            padding: 18px 20px;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .product-card .card-title {
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #1a1c1c;
+            min-height: 56px;
+            max-height: 56px;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+        .product-card .card-desc {
+            font-size: 14px;
+            color: #5b403d;
+            min-height: 80px;
+            max-height: 80px;
+            overflow: hidden;
+        }
+        .product-card .card-footer {
+            padding: 16px 20px 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-card .whatsapp-btn {
+            width: 100%;
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+            background: #b7131a;
+            color: #ffffff;
+            padding: 12px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .product-card .whatsapp-btn:hover{
+            background: #8f0f13;
+        }
+        .inquiry-modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            z-index: 1000;
+        }
+        .inquiry-modal-backdrop.active {
+            display: flex;
+        }
+        .inquiry-modal {
+            width: min(540px, 100%);
+            max-height: calc(100vh - 3rem);
+            overflow-y: auto;
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+        }
+        .inquiry-modal header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .inquiry-modal-close {
+            width: 2.75rem;
+            height: 2.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            border: none;
+            background: #f3f4f6;
+            color: #1a1c1c;
+            font-size: 1.35rem;
+            cursor: pointer;
+        }
+        .inquiry-modal input,
+        .inquiry-modal textarea,
+        .inquiry-modal select {
+            width: 100%;
+            padding: 0.95rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.75rem;
+            outline: none;
+            transition: border-color 200ms ease, box-shadow 200ms ease;
+            font-family: inherit;
+        }
+        .inquiry-modal input:focus,
+        .inquiry-modal textarea:focus,
+        .inquiry-modal select:focus {
+            border-color: #b7131a;
+            box-shadow: 0 0 0 4px rgba(183, 19, 26, 0.12);
+        }
+        @media (max-width: 640px) {
+            .inquiry-modal {
+                padding: 1rem;
+            }
+        }
+        @keyframes marquee-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-surface-container-lowest dark:bg-surface-dim border-b border-outline-variant dark:border-outline shadow-sm">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="JIYA ENTERPRISES Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA0dV5OYU0ge5EWBgsduhm7mVlc5dTpXk3z4acBzCeGqBm5YbEm2sFNDYvPTELxDmLsokk9scaz0OmTrKu_flSG7kVAdH-YXq8veIHrCWzTFT52c4S3z7TaUipRar5LHrjuJjJ5qqzHslx1PKhM2LxCPdiJe9T_m1zCmYQu7uwQZKJU6dV0aGiGmFP2dY0BZxt_OaVfpEsVVfkNzVOOTVKETAUtcUQZDNTwlckySd9JzP__YsSQXhryvtEUFld452Y0V0"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">JIYA ENTERPRISES</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors duration-200" href="#about">About</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors duration-200" href="#products">Products</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors duration-200" href="#gallery">Gallery</a>
+<a class="text-secondary dark:text-secondary-fixed hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-3">
+<a class="hidden lg:flex items-center gap-2 bg-secondary text-on-secondary px-4 py-2 rounded-lg font-bold active:scale-95 transition-transform" href="tel:+919716018674">
+<span class="material-symbols-outlined text-[20px]">call</span>
+                    Call Now
+                </a>
+<a class="flex items-center gap-2 bg-primary text-on-primary px-4 py-2 rounded-lg font-bold active:scale-95 transition-transform" href="https://wa.me/919716018674">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                    WhatsApp
+                </a>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[80vh] flex items-center overflow-hidden bg-inverse-surface">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10"></div>
+<div class="w-full h-full" data-alt="A cinematic, high-contrast photograph of a large-scale industrial manufacturing facility with focused warm sparks and cool blue atmospheric lighting. The scene highlights heavy machinery and steel components in a modern factory setting with a professional, authoritative B2B aesthetic. Minimalist composition with a focus on engineering precision and robust industrial strength." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOAHj8YI2gA1Eahjt7XVuN7aC4ObTedRa_DZb5hDBtJCVHkQsxh8cDgRDZ7aGzyst8J_FE5x6kAcMKbzM3WPOfJM6viO_Hyd2p1CZ2DofXhN700p8fRdbxjw2Nxs8pVgUUGTq-73GvRFf3M-bHUrN92XuwTiHWp22GcGd9-nTe8NVpxOx6T-f5jlYJdRvQzzNCJM0dQ2nV9DiZQ6BUhsqzO89H_1cGGbdS-xMGzqKoIh8uRcVpFBkIdg')"></div>
+</div>
+<div class="container mx-auto px-gutter relative z-20">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-headline-xl text-white mb-6 text-shadow-sm">
+                    Leading Manufacturer of <span class="text-primary">Dona Machine Spare Parts</span> & Industrial Components
+                </h1>
+<p class="font-body-lg text-body-lg text-gray-200 mb-10">
+                    Manufacturing premium quality industrial spare parts with precision engineering, reliable performance, and fast delivery across India since 1998.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-primary text-white font-bold rounded-lg shadow-lg hover:bg-surface-tint transition-colors text-lg uppercase tracking-wider" href="#products">View Products</a>
+<a class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-secondary transition-all text-lg uppercase tracking-wider" href="#contact">Get Quote</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Added new product cards -->
+<section style="display:none"></section>
+<!-- About Section -->
+<section class="py-margin-desktop bg-surface industrial-grid" id="about">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<div class="inline-block bg-primary/10 text-primary font-bold px-4 py-1 rounded-full text-sm mb-4 uppercase tracking-widest">Since 1998</div>
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-6">Trusted Industrial Excellence</h2>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>JIYA ENTERPRISES stands as a beacon of reliability in the manufacturing sector. For over two decades, we have dedicated ourselves to perfecting the art of precision engineering, specializing in high-performance spare parts for Dona making machines.</p>
+<p>Located in the heart of Ghaziabad, our facility utilizes advanced production techniques to ensure every component—from v-belts to specialized heaters—meets rigorous quality standards before reaching our B2B partners across India.</p>
+</div>
+<div class="grid grid-cols-3 gap-4 mt-10">
+<div class="text-center">
+<div class="font-headline-md text-primary font-bold">25+</div>
+<div class="text-xs uppercase text-secondary font-bold">Years Experience</div>
+</div>
+<div class="text-center">
+<div class="font-headline-md text-primary font-bold">1000+</div>
+<div class="text-xs uppercase text-secondary font-bold">Clients Served</div>
+</div>
+<div class="text-center">
+<div class="font-headline-md text-primary font-bold">100%</div>
+<div class="text-xs uppercase text-secondary font-bold">Quality Assured</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
+<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
+<img alt="Precision Bearings" class="rounded-xl shadow-2xl relative z-10 border-4 border-white object-cover aspect-[4/3] w-full" src="https://i.ibb.co/d0dGFZsT/Whats-App-Image-2026-07-29-at-09-07-17.jpg"/>
+</div>
+</div>
+</section>
+<!-- Product Showcase -->
+<section class="py-margin-desktop bg-white mb-5 pb-5" id="products">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-2">Our Product Catalog</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full mb-4"></div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">High-precision components designed for durability and maximum industrial throughput.</p>
+</div>
+<div class="products-grid">
+<!-- Product Card 1 -->
+<article class="product-card">
+    <div class="img-wrap"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX4XG3WfpyPSGyHUOI3ilMDs7BVkL2Fr0ke3QLre6-YaOiuoAUOGNG8iEgzgTw8tLW4JMtwBoq5kO7HSvNjnKb2KcYQFpRSa5z84nzq6VzB9bBjM5BOlFQbxjfwVdcWaYxcsayrhEmDVfs45WAhfaF4BAoN6DmXYK2KZOqe2zGU7ylhAiECeaYGXTtarzJyMhAzKlbhvil1eENcdYJrczjDbA9A0k06xjD2WVB0RIqXiSp6DQj7T3gvNKKe3rbfRv8Tsg" alt="Dona Machine"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Dona Machine</h3>
+        <p class="card-desc">High-precision Dona machine components engineered for continuous industrial use.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<!-- Product Card 2 -->
+<article class="product-card">
+    <div class="img-wrap"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ti5XmQozOFf5k_BNFagJIQjQtGXZfUPoCinpXfdUwapeuLZ4fqiZUAHkRmy0mTUtMTT5PA_G5IIQyWOhSUa85haYoR0KjNp7L4on6dBPFENR5J87rL-pKCC6spkYpM-ApPLxPsW7QB9tbFYmioWvgM1LBfaTbYPpCGDlHaeGSOXVRVUKWBJ5d9ObMVN-IDjjR4CSMKPMabgvkXe7KUp08zqczsy0x_6_ZyiBXTZr7EE3uGqc2NZjIhzuXW0zbpcBfeg" alt="Bracket"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Bracket</h3>
+        <p class="card-desc">Durable mounting brackets with premium corrosion-resistant finishes.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<!-- Product Card 3 -->
+<article class="product-card">
+    <div class="img-wrap"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTfw5dyFSxr7-iw8jgt98foRiL-8hq7CY8wSwlG1UC-gl_lNE0mn-WHWym6t9_U6Q8Sa2C6hfSupl1WR3aTh4bDBw574Noe1U4coPOfFwZYCkTG2N7H4fVbiRUsYippX0VzoM90hbi66dREldeHpKPXF_fZkWrh0SrpRm0hkJDe_qdu8fC1MZpmr9rq6B4RBP7l9o2ZcqkEfymTUZ_nq2_TiL9ZW9Udxy-kYWzRjbUYwM9LhD8vvxi_XtA23Hwu3XIkos" alt="Motor"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Motor</h3>
+        <p class="card-desc">Reliable industrial motors optimized for torque and efficiency.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<!-- Product Card 4 -->
+<article class="product-card">
+    <div class="img-wrap"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhWfsZOHcFKVufd4KIO4N77_VRrNf00HISkYvIBKsh_Ri-BlDn8fFpcmZPEjKSqa_yv0JvCDQnE-99ouGktyl3v3r0tGOAPC4QU21OlfV4-bmytY4lfRksAamsEtkuYT6AfPbyJaCLr1ZIEVSgqqJ4dt3nkpO8E2ipG2uHh2K4AFqeJ3XDlw5qV80BIO-2SnTk-OGmzH7kpTZKIlifj6PdOB7uYzjXoL11_7d-Mgf3DApRmvuadDsnd9psAAmsx3CmdBA" alt="Chain & Sprocket"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Chain &amp; Sprocket</h3>
+        <p class="card-desc">Precision chains and sprockets engineered for smooth power transmission.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<!-- Product Card 5 -->
+<article class="product-card">
+    <div class="img-wrap"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGNvvUp3taxue1nawhLakb6FcxvO4qdUZWh080VrH2DvNdSe5MWchWsLgOxj68DLbCEMhrXzS31btF8fC12J3xJFemSojB8dhN2abX3luoTKj70E2blxMkPMV494fA34EHdCssUPOSkJGexa3adEQzAJ1OGnLlo7Myt1joY0egsbkdF37Vh9VqwFGLmjwby3QfpCD17Pf0PPXI70a5N9DgwV34GZXSx5uoT93cL0j4ssqQln19IFU4dPKIDv3cddhMqP0" alt="Industrial Bolts"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Industrial Bolts</h3>
+        <p class="card-desc">Grade-A fasteners tested for tensile strength and fatigue resistance.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<!-- Product Card 6 -->
+<article class="product-card">
+    <div class="img-wrap"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvyrlXbGc3APf-4gKsYj4HSl1lcLbu9NUwXQlBwXWuh2hJlplZkxN09S10PYyL6LOqB3JLgq0m1cW3hc4pnWKRgLjAzb8Vp1c9EQAtbnZLEMYegLfzNfupJcrnPuxE6GIg04OEi5c1sJHbUsoGJUc4Qwinw-Oa4BWXzohEbWZhmCPvXzrLTmWKUBYnUuchIdNs_pNural-kg66fYtzjhS_gDUX3NJ21OqEQnjrEqp4vsSTYAmE7QuWtpnovkozcQwiNxU" alt="V Belts"/></div>
+    <div class="card-body">
+        <h3 class="card-title">V Belts</h3>
+        <p class="card-desc">Durable V-belts for efficient power transfer in industrial drives.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+
+<!-- Professional Product Cards (replaced) -->
+<article class="product-card">
+    <div class="img-wrap"><img alt="Blower" src="https://i.ibb.co/B2nzy2jz/Whats-App-Image-2026-07-29-at-08-56-32.jpg"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Blower</h3>
+        <p class="card-desc">High-flow industrial blower for process ventilation.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<article class="product-card">
+    <div class="img-wrap"><img alt="Heater" src="https://i.ibb.co/DDVPJBQP/Whats-App-Image-2026-07-29-at-08-57-52.jpg"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Heater</h3>
+        <p class="card-desc">Precision spare parts built to OEM tolerances.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<article class="product-card">
+    <div class="img-wrap"><img alt="Roller" src="https://i.ibb.co/gFS5zC4D/Whats-App-Image-2026-07-29-at-08-59-01.jpg"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Roller</h3>
+        <p class="card-desc">Robust components for heavy-duty applications.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<article class="product-card">
+    <div class="img-wrap"><img alt="Free Wheel bush" src="https://i.ibb.co/jPWjZqwM/Whats-App-Image-2026-07-29-at-08-59-31.jpg"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Free Wheel bush</h3>
+        <p class="card-desc">Modular assembly parts for seamless integration.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<article class="product-card">
+    <div class="img-wrap"><img alt="Puli" src="https://i.ibb.co/4ZRJ648G/Whats-App-Image-2026-07-29-at-09-02-40.jpg"/></div>
+    <div class="card-body">
+        <h3 class="card-title">Puli</h3>
+        <p class="card-desc">High-strength machine parts for long service life.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+<article class="product-card">
+    <div class="img-wrap"><img alt="double puli" src="https://i.ibb.co/Rp6CMjHS/Whats-App-Image-2026-07-29-at-09-03-03-1.jpg"/></div>
+    <div class="card-body">
+        <h3 class="card-title">double puli</h3>
+        <p class="card-desc">Turnkey equipment solutions for production lines.</p>
+    </div>
+    <div class="card-footer"><a class="whatsapp-btn" href="#contact"><span class="material-symbols-outlined">chat</span>&nbsp;Enquire</a></div>
+</article>
+
+</div>
+
+
+<!-- Gallery Section -->
+<section class="py-margin-desktop bg-surface-container-low mt-10 pt-10" id="gallery">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-2">Our Gallery</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full mb-4"></div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">A premium showcase of our manufacturing environment, product range, and industrial operations.</p>
+</div>
+<div class="marquee mb-8">
+<div class="marquee-track">
+<div class="marquee-item"><img alt="Gallery Image 1" src="https://i.ibb.co/rfM1NW1p/Whats-App-Image-2026-07-29-at-08-52-50.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 2" src="https://i.ibb.co/B2nzy2jz/Whats-App-Image-2026-07-29-at-08-56-32.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 3" src="https://i.ibb.co/j9T5DWqz/Whats-App-Image-2026-07-29-at-08-56-57.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 4" src="https://i.ibb.co/YFNzsrH9/Whats-App-Image-2026-07-29-at-08-58-09.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 5" src="https://i.ibb.co/gFS5zC4D/Whats-App-Image-2026-07-29-at-08-59-01.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 6" src="https://i.ibb.co/jPWjZqwM/Whats-App-Image-2026-07-29-at-08-59-31.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 7" src="https://i.ibb.co/pqy96Q1/Whats-App-Image-2026-07-29-at-08-59-56.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 8" src="https://i.ibb.co/7dfD8xn9/Whats-App-Image-2026-07-29-at-09-01-02.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 9" src="https://i.ibb.co/Y44mP0XB/Whats-App-Image-2026-07-29-at-09-01-42.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 10" src="https://i.ibb.co/1GbYt010/Whats-App-Image-2026-07-29-at-09-02-06.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 11" src="https://i.ibb.co/4ZRJ648G/Whats-App-Image-2026-07-29-at-09-02-40.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 12" src="https://i.ibb.co/gMWDX4g7/Whats-App-Image-2026-07-29-at-09-03-03-1.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 13" src="https://i.ibb.co/DDXJ5zmW/Whats-App-Image-2026-07-29-at-09-03-44.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 14" src="https://i.ibb.co/wN0XJcTB/Whats-App-Image-2026-07-29-at-09-04-23.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 15" src="https://i.ibb.co/d0dGFZsT/Whats-App-Image-2026-07-29-at-09-07-17.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 16" src="https://i.ibb.co/xVC8n7J/Whats-App-Image-2026-07-29-at-08-51-59.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 1" src="https://i.ibb.co/rfM1NW1p/Whats-App-Image-2026-07-29-at-08-52-50.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 2" src="https://i.ibb.co/B2nzy2jz/Whats-App-Image-2026-07-29-at-08-56-32.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 3" src="https://i.ibb.co/j9T5DWqz/Whats-App-Image-2026-07-29-at-08-56-57.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 4" src="https://i.ibb.co/YFNzsrH9/Whats-App-Image-2026-07-29-at-08-58-09.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 5" src="https://i.ibb.co/gFS5zC4D/Whats-App-Image-2026-07-29-at-08-59-01.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 6" src="https://i.ibb.co/jPWjZqwM/Whats-App-Image-2026-07-29-at-08-59-31.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 7" src="https://i.ibb.co/pqy96Q1/Whats-App-Image-2026-07-29-at-08-59-56.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 8" src="https://i.ibb.co/7dfD8xn9/Whats-App-Image-2026-07-29-at-09-01-02.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 9" src="https://i.ibb.co/Y44mP0XB/Whats-App-Image-2026-07-29-at-09-01-42.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 10" src="https://i.ibb.co/1GbYt010/Whats-App-Image-2026-07-29-at-09-02-06.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 11" src="https://i.ibb.co/4ZRJ648G/Whats-App-Image-2026-07-29-at-09-02-40.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 12" src="https://i.ibb.co/gMWDX4g7/Whats-App-Image-2026-07-29-at-09-03-03-1.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 13" src="https://i.ibb.co/DDXJ5zmW/Whats-App-Image-2026-07-29-at-09-03-44.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 14" src="https://i.ibb.co/wN0XJcTB/Whats-App-Image-2026-07-29-at-09-04-23.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 15" src="https://i.ibb.co/d0dGFZsT/Whats-App-Image-2026-07-29-at-09-07-17.jpg"/></div>
+<div class="marquee-item"><img alt="Gallery Image 16" src="https://i.ibb.co/xVC8n7J/Whats-App-Image-2026-07-29-at-08-51-59.jpg"/></div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 1" class="w-full h-64 object-cover" src="https://i.ibb.co/rfM1NW1p/Whats-App-Image-2026-07-29-at-08-52-50.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 2" class="w-full h-64 object-cover" src="https://i.ibb.co/B2nzy2jz/Whats-App-Image-2026-07-29-at-08-56-32.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 3" class="w-full h-64 object-cover" src="https://i.ibb.co/j9T5DWqz/Whats-App-Image-2026-07-29-at-08-56-57.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 4" class="w-full h-64 object-cover" src="https://i.ibb.co/YFNzsrH9/Whats-App-Image-2026-07-29-at-08-58-09.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 5" class="w-full h-64 object-cover" src="https://i.ibb.co/gFS5zC4D/Whats-App-Image-2026-07-29-at-08-59-01.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 6" class="w-full h-64 object-cover" src="https://i.ibb.co/jPWjZqwM/Whats-App-Image-2026-07-29-at-08-59-31.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 7" class="w-full h-64 object-cover" src="https://i.ibb.co/pqy96Q1/Whats-App-Image-2026-07-29-at-08-59-56.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 8" class="w-full h-64 object-cover" src="https://i.ibb.co/7dfD8xn9/Whats-App-Image-2026-07-29-at-09-01-02.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 9" class="w-full h-64 object-cover" src="https://i.ibb.co/Y44mP0XB/Whats-App-Image-2026-07-29-at-09-01-42.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 10" class="w-full h-64 object-cover" src="https://i.ibb.co/1GbYt010/Whats-App-Image-2026-07-29-at-09-02-06.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 11" class="w-full h-64 object-cover" src="https://i.ibb.co/4ZRJ648G/Whats-App-Image-2026-07-29-at-09-02-40.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 12" class="w-full h-64 object-cover" src="https://i.ibb.co/gMWDX4g7/Whats-App-Image-2026-07-29-at-09-03-03-1.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 13" class="w-full h-64 object-cover" src="https://i.ibb.co/DDXJ5zmW/Whats-App-Image-2026-07-29-at-09-03-44.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 14" class="w-full h-64 object-cover" src="https://i.ibb.co/wN0XJcTB/Whats-App-Image-2026-07-29-at-09-04-23.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 15" class="w-full h-64 object-cover" src="https://i.ibb.co/d0dGFZsT/Whats-App-Image-2026-07-29-at-09-07-17.jpg"/></div>
+<div class="overflow-hidden rounded-xl shadow-md border border-outline-variant bg-white"><img alt="Gallery Image 16" class="w-full h-64 object-cover" src="https://i.ibb.co/xVC8n7J/Whats-App-Image-2026-07-29-at-08-51-59.jpg"/></div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-margin-desktop bg-secondary text-white relative overflow-hidden">
+<div class="absolute inset-0 opacity-5 pointer-events-none industrial-grid"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-center mb-16">Our Manufacturing Process</h2>
+<div class="relative grid grid-cols-1 md:grid-cols-5 gap-8">
+<!-- Line background -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-white/20 -translate-y-1/2 z-0"></div>
+<!-- Steps -->
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-headline-md font-bold shadow-lg ring-4 ring-white/10">1</div>
+<h3 class="font-headline-md text-lg mb-2 uppercase tracking-wide">Raw Material</h3>
+<p class="text-sm text-gray-300">Grade-A industrial steel & alloys sourcing</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-headline-md font-bold shadow-lg ring-4 ring-white/10">2</div>
+<h3 class="font-headline-md text-lg mb-2 uppercase tracking-wide">Manufacturing</h3>
+<p class="text-sm text-gray-300">CNC precision machining & fabrication</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-headline-md font-bold shadow-lg ring-4 ring-white/10">3</div>
+<h3 class="font-headline-md text-lg mb-2 uppercase tracking-wide">Inspection</h3>
+<p class="text-sm text-gray-300">Rigorous multi-point quality testing</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-headline-md font-bold shadow-lg ring-4 ring-white/10">4</div>
+<h3 class="font-headline-md text-lg mb-2 uppercase tracking-wide">Packaging</h3>
+<p class="text-sm text-gray-300">Industrial-grade safe transit packing</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-headline-md font-bold shadow-lg ring-4 ring-white/10">5</div>
+<h3 class="font-headline-md text-lg mb-2 uppercase tracking-wide">Delivery</h3>
+<p class="text-sm text-gray-300">Nationwide shipping network</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Inquiry Section -->
+<section class="py-margin-desktop bg-surface-container-low" id="contact">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-8">Contact Information</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<h4 class="font-bold text-secondary text-lg mb-1">Our Location</h4>
+<p class="text-on-surface-variant">30 Futa Road, Hindon Vihar, Near Dharam Kanta, <br/>Rapid Metro, Ghaziabad, Uttar Pradesh – 201001<br/>28°40'37.2"N 77°24'34.6"E</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">call</span>
+<div>
+<h4 class="font-bold text-secondary text-lg mb-1">Phone Numbers</h4>
+<p class="text-on-surface-variant">+91 9716018674</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+<div>
+<h4 class="font-bold text-secondary text-lg mb-1">Email Address</h4>
+<p class="text-on-surface-variant">aslamsaifi9716@gmail.com</p>
+</div>
+</div>
+</div>
+<div class="mt-12 p-1 rounded-lg border-2 border-outline-variant bg-white">
+<a class="block w-full h-64 rounded-lg overflow-hidden" href="https://www.google.com/maps?q=28.676999,77.409611" target="_blank" rel="noopener noreferrer">
+<div class="w-full h-full grayscale opacity-80 bg-cover bg-center" data-alt="A detailed, clean minimalist map showing the industrial district of Ghaziabad" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-K0PS8zXNkadzZzB3MbRaqgwlCaaACVkMKKVqUyWwvWWnuITZlv87MLQZBhcV2wrYaaYC-YXYJ3bKqcaxLSxIy89EWBG1ykGzWpm9GAVMLeDDZ5OPIEyqr-H8d4AWujyIO58FuhApgs1rnTmCs4OeXs5Wp9huoxlHSuVtcPj96EhvYdfnXRCssACssChKVWoOVf5hQ_FavCp4iOgTHxbCSxbGB7HgSvU01e1GlVwLoocGok4kLrTvSA');"></div>
+</a>
+</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-xl border border-outline-variant">
+<h3 class="font-headline-md text-secondary mb-6">B2B Inquiry Form</h3>
+<form id="b2b-inquiry-form" class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-bold text-secondary mb-1" for="b2b-name">Your Name</label>
+<input id="b2b-name" name="name" class="w-full px-4 py-2 rounded border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="text" required />
+</div>
+<div>
+<label class="block text-sm font-bold text-secondary mb-1" for="b2b-phone">Mobile Number</label>
+<input id="b2b-phone" name="phone" class="w-full px-4 py-2 rounded border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="tel" inputmode="tel" pattern="[0-9]{10}" placeholder="9716018674" required />
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-secondary mb-1" for="b2b-company">Company Name</label>
+<input id="b2b-company" name="company" class="w-full px-4 py-2 rounded border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="text" />
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-bold text-secondary mb-1" for="b2b-city">City</label>
+<input id="b2b-city" name="city" class="w-full px-4 py-2 rounded border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" type="text" />
+</div>
+<div>
+<label class="block text-sm font-bold text-secondary mb-1" for="b2b-product">Product Interested In</label>
+<select id="b2b-product" name="product" class="w-full px-4 py-2 rounded border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
+<option>Dona Machine Parts</option>
+<option>Industrial Motors</option>
+<option>Bearings & Spares</option>
+<option>Belts & Chains</option>
+<option>Other Components</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-secondary mb-1" for="b2b-message">Message</label>
+<textarea id="b2b-message" name="message" class="w-full px-4 py-2 rounded border border-outline focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-surface-tint shadow-lg transition-all transform active:scale-95 uppercase tracking-widest" type="submit">Submit Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+
+<div class="inquiry-modal-backdrop" id="inquiry-modal" aria-hidden="true">
+    <div class="inquiry-modal" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">
+        <header>
+            <div>
+                <p class="text-sm uppercase tracking-widest text-secondary">Quick Enquiry</p>
+                <h3 id="inquiry-modal-title" class="font-headline-md text-secondary text-2xl font-bold">Request a Call Back</h3>
+            </div>
+            <button type="button" class="inquiry-modal-close" id="inquiry-modal-close" aria-label="Close enquiry form">&times;</button>
+        </header>
+        <form id="inquiry-modal-form" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-secondary mb-1" for="inquiry-name">Your Name</label>
+                    <input id="inquiry-name" name="name" type="text" required placeholder="Enter your name" class="w-full rounded border border-outline px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" />
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-secondary mb-1" for="inquiry-phone">Mobile Number</label>
+                    <input id="inquiry-phone" name="phone" type="tel" required inputmode="tel" pattern="[0-9]{10}" placeholder="9716018674" class="w-full rounded border border-outline px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" />
+                </div>
+            </div>
+            <input type="hidden" id="inquiry-product" name="product" value="" />
+            <div>
+                <label class="block text-sm font-bold text-secondary mb-1" for="inquiry-company">Company / Professional</label>
+                <input id="inquiry-company" name="company" type="text" placeholder="Company name or role" class="w-full rounded border border-outline px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all" />
+            </div>
+            <div>
+                <p id="inquiry-product-label" class="text-sm text-on-surface-variant">Selected Product: Any</p>
+            </div>
+            <div>
+                <button type="submit" class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-surface-tint shadow-lg transition-all transform active:scale-95 uppercase tracking-widest">Send Enquiry</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w-full bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter py-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<img alt="JIYA ENTERPRISES Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7PCHeXprwUWMEMPfZajAuTLt4y5AhTrNES3MNL4Tn1DPRCEHd8FOJ6SkdOjeyvKk-rnJ679KeXIS_1FtKzeNRSRX86aiM9CkzS22EPEBc-QHkeGqUzt81CnDCxuj-t1LdA93lny20Ges0xL0syIwFRCMc3Hz9UqoAerG-qAzn5La-hagMXNnzvrFkWVQAY8QI3_3MWj-v7dnY7iRXTMZVtVzk-Fx62vc-UfOOSSvsNCr2GkOnUPixD0VI4iX01GoeVBc"/>
+<span class="font-headline-md text-headline-md font-bold text-primary">JIYA ENTERPRISES</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Industrial Excellence Since 1998. Your partner in premium quality Dona Machine spare parts.</p>
+</div>
+<div>
+<h4 class="font-bold text-secondary mb-6 uppercase tracking-wider">Quick Links</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#products">Products</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-secondary mb-6 uppercase tracking-wider">Support</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Certifications</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Sitemap</a></li>
+</ul>
+</div>
+</div>
+<div class="bg-secondary py-4 text-center">
+<p class="text-white/70 text-sm font-label-md">JIYA ENTERPRISES. All Rights Reserved. Industrial Excellence Since 1998. and 2026 <a class="underline hover:text-white" href="https://shrivastavwebstudio.shop/">shrivastav web studio</a></p>
+</div>
+</footer>
+<script>
+        // Simple Micro-interactions
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky Nav effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        const inquiryModal = document.getElementById('inquiry-modal');
+        const inquiryModalClose = document.getElementById('inquiry-modal-close');
+        const inquiryForm = document.getElementById('inquiry-modal-form');
+
+        let selectedProductName = '';
+
+        function openInquiryModal(productName) {
+            selectedProductName = productName || '';
+            const productInput = document.getElementById('inquiry-product');
+            const productLabel = document.getElementById('inquiry-product-label');
+            if (productInput) {
+                productInput.value = selectedProductName;
+            }
+            if (productLabel) {
+                productLabel.textContent = selectedProductName ? `Selected Product: ${selectedProductName}` : 'Selected Product: Any';
+            }
+            inquiryModal.classList.add('active');
+            inquiryModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            document.getElementById('inquiry-name').focus();
+        }
+
+        function closeInquiryModal() {
+            inquiryModal.classList.remove('active');
+            inquiryModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.product-card .whatsapp-btn').forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                const productCard = button.closest('.product-card');
+                const productName = productCard ? productCard.querySelector('.card-title')?.textContent.trim() : '';
+                openInquiryModal(productName);
+            }, { capture: true });
+        });
+
+        inquiryModalClose.addEventListener('click', closeInquiryModal);
+
+        inquiryModal.addEventListener('click', function (event) {
+            if (event.target === inquiryModal) {
+                closeInquiryModal();
+            }
+        });
+
+        inquiryForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('inquiry-name').value.trim();
+            const phone = document.getElementById('inquiry-phone').value.trim();
+            const company = document.getElementById('inquiry-company').value.trim();
+
+            if (!name || !phone) {
+                alert('Please enter your name and phone number.');
+                return;
+            }
+
+            const product = document.getElementById('inquiry-product').value.trim();
+            let message = `Hello, my name is ${name}. I am interested in your products.`;
+            if (product) {
+                message = `Hello, my name is ${name}. I am interested in ${product}.`;
+            }
+            message += `\nPhone: ${phone}`;
+            if (company) {
+                message += `\nCompany: ${company}`;
+            }
+            if (product.toLowerCase() === 'heater') {
+                message += `\nWebsite related enquiry`;
+            }
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappNumber = '919716018674';
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+            closeInquiryModal();
+            window.location.href = whatsappUrl;
+        });
+
+        const b2bInquiryForm = document.getElementById('b2b-inquiry-form');
+        if (b2bInquiryForm) {
+            b2bInquiryForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const name = document.getElementById('b2b-name').value.trim();
+                const phone = document.getElementById('b2b-phone').value.trim();
+                const company = document.getElementById('b2b-company').value.trim();
+                const city = document.getElementById('b2b-city').value.trim();
+                const product = document.getElementById('b2b-product').value.trim();
+                const messageText = document.getElementById('b2b-message').value.trim();
+
+                if (!name || !phone) {
+                    alert('Please enter your name and phone number.');
+                    return;
+                }
+
+                let message = `Hello, my name is ${name}. I am interested in ${product}.`;
+                message += `\nPhone: ${phone}`;
+                if (company) {
+                    message += `\nCompany: ${company}`;
+                }
+                if (city) {
+                    message += `\nCity: ${city}`;
+                }
+                if (messageText) {
+                    message += `\nMessage: ${messageText}`;
+                }
+                const encodedMessage = encodeURIComponent(message);
+                const whatsappNumber = '919716018674';
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+                window.location.href = whatsappUrl;
+            });
+        }
+    </script>
+</body></html>
